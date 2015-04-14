@@ -7,14 +7,6 @@ body {
     text-rendering: optimizelegibility;
 }
 
-.well .page-header {
-    margin-top: 0px;
-}
-
-.well .page-header h1 {
-    margin-top: 0px;
-}
-
 /* bootstrap 3 helpers */
 
 #nav.affix {
@@ -33,7 +25,25 @@ body {
     z-index:10;
 }
 
+header {
+    background-color: lightblue;
+}
+
+.items {
+    padding: 30px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+header img {
+    margin: 0 20px;
+}
+
 /* Resume */
+
+#resume {
+    padding: 20px;
+}
 
 #resume h3 {
     font-size: 20px;
@@ -56,6 +66,14 @@ body {
     margin-top: 0px;
 }
 
+#features {
+    text-align: center;
+}
+
+#features img {
+    margin: 0 0 20px;
+}
+
 /* --------------------------------------
    Footer
    -------------------------------------- */
@@ -66,4 +84,32 @@ footer {
     font-size: 11px;
     padding: 20px;
     margin-top: 20px;
+}
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 991px) {
+	header {
+        text-align: center;    
+    }
+    
+    .items img {
+        float: none;
+    }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
 }
