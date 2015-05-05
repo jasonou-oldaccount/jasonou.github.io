@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        
+    <!-- Meta Tag -->
+    <meta charset="utf-8">
+        
+    <title>Where'd It Go?</title>
+        
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/plot.css">
+        
+    <!-- D3.js Source -->
+    <script type= "text/javascript" src="http://d3js.org/d3.v3.min.js"></script> 
+        
+    </head>
+
+    <body>
+        <!-- Title -->
+        <h1 style = "text-align:center; color:steelblue"><bold> <u>Where'd It Go?</u> </bold></h1>
+        
+        <!-- D3.js code -->
+        <script type="text/javascript" src="js/plot.js"></script>
+        
+        <div id="Content">
+            <FORM NAME="myform">
+                Enter A Value From 0 to 1 : <INPUT NAME="uservalue">
+
+                <INPUT TYPE="button" Value="Create Graph" onClick="runSim(this.form)"> <br/>
+            </FORM>
+        </div>
+                
+        <div id="Content">
+            <FORM NAME="myform">
+                Enter A Year between 2010 to 2070 : <INPUT NAME="useryear">
+
+                <INPUT TYPE="button" Value="Find Profit" onClick="runFind(this.form)"> <br/>
+            </FORM>
+                
+            <div id="yearinfo"></div>
+        </div>
+                
+        <div id="Content">
+                Click to View or Hide the Stochastic Value
+
+                <INPUT TYPE="button" Value="View / Hide" onClick="showSto(this.form)"> <br/>
+
+            <div id="showstovalue"></div>
+        </div>
+                
+        <div id="sim"></div>
+        
+        <div id="info">
+            <!-- Submission Info -->
+            <h4>Created by Jason Ou (jaou@ucsc.edu)</h4>
+
+            <h4>Description: LEEPS Lab Programming Project #1 Using D3</h4>
+
+            <!-- Create a list using <ul> and <li> tag -->
+            <h4>Files Submitted:</h4>
+
+            <ul>
+                <li>plot.html</li>
+                <li>plot.js</li>
+                <li>plot.css</li>
+            </ul>
+
+            <h4> Sources: </h4>
+            <ul>
+                <li>D3 API Reference</li>
+                <li>Interactive Data Visualization for the Web</li>
+                <li><a href="http://bl.ocks.org/mbostock/3883245" target = "_blank"> Line Chart by Mike Bostock</a></li>
+                <li><a href="http://big-elephants.com/2014-06/unrolling-line-charts-d3js/" target = "_blank">Unrolling Line Charts</a></li>
+                <li><a href="http://www.d3noob.org/2013/01/adding-tooltips-to-d3js-graph.html" target="_blank">D3 Tooltip</a></il>
+            </ul>
+        </div>
+    </body>
+</html>

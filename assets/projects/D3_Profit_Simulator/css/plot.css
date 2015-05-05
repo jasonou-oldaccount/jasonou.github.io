@@ -1,0 +1,128 @@
+/* Body */
+body {
+    margin:0% 10% 0% 10%; 
+    padding:0px;
+	text-align:center;
+    background-color: #fff;
+    width: 80%;
+}
+
+.axis path,
+.axis line1,
+.axis line2,
+.axis line3 {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line1 {
+  fill: none;
+  stroke: DarkSlateBlue;
+  stroke-width: 2px;
+}
+
+.line2 {
+  fill: none;
+  stroke: DarkSeaGreen;
+  stroke-width: 2px;
+}
+
+.line3 {
+  fill: none;
+  stroke: CadetBlue;
+  stroke-width: 2px;
+}
+
+#info {
+    width: 500px;
+    height: auto;
+	margin:0px auto;
+	text-align:left;
+	padding:15px;
+	border:1px dashed #333;
+	background-color:#eee;
+}
+
+.grid .tick {
+    stroke: #fff;
+    stroke-opacity: 0.5;
+    shape-rendering: crispEdges;
+}
+
+.grid path {
+    stroke-width: 1;
+    stroke: #000;
+}
+
+.label1 {
+    fill: DarkSlateBlue;    
+}
+
+.label2 {
+    fill: DarkSeaGreen;
+}
+
+.label3 {
+    fill: CadetBlue;
+}
+
+.label4 {
+    fill: #CC9933;
+}
+
+.tooltip1 {   
+  color: DarkSlateBlue;
+  position: absolute;           
+  text-align: center;           
+  width: 200px;                  
+  height: 60px;                 
+  padding: 2px;             
+  font: 13px sans-serif;        
+  background: #ddd;   
+  border: 0px;      
+  border-radius: 8px;           
+  pointer-events: none;        
+}
+
+.tooltip2 {   
+  color: DarkSeaGreen;
+  position: absolute;
+  text-align: center;
+  width: 200px;    
+  height: 50px;
+  padding: 2px;             
+  font: 13px sans-serif;        
+  background: #111;   
+  border: 0px;      
+  border-radius: 8px;           
+  pointer-events: none;        
+}
+
+.tooltip3 {   
+  color: CadetBlue;
+  position: absolute;           
+  text-align: center;           
+  width: 200px;                  
+  height: 50px;                 
+  padding: 2px;             
+  font: 13px sans-serif;        
+  background: #111;   
+  border: 0px;      
+  border-radius: 8px;           
+  pointer-events: none;        
+}
+
+#Content {
+	width: 500px;
+    height: auto;
+	margin:0px auto;
+	text-align:center;
+	padding:15px;
+	border:1px dashed #333;
+	background-color:#eee;
+}
