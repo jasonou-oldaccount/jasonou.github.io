@@ -1,4 +1,4 @@
-﻿
+
 /*=============================================================
     Authour URL: www.designbootstrap.com
     
@@ -51,6 +51,18 @@ text-transform: uppercase;
 .header hr {
 width: 50px;
 border-top: 2px solid rgb(40, 141, 203);
+}
+
+#status {
+	background-image: url(../img/preloader.gif);
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 200px;
+	left: 50%;
+	margin: -100px 0 0 -100px;
+	position: absolute;
+	top: 50%;
+	width: 200px;
 }
 
 
