@@ -1,0 +1,280 @@
+/************************************
+ * Global Styles
+*************************************/
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1; /* for IE */
+}
+
+/************************************
+ * Word Overlay Picture for the Snake
+*************************************/
+
+.main {
+    background: 
+    url("pictures/text_over.png") center center,
+    url("pictures/snake.png") center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: black;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+/************************************
+ * Snake Background Picture
+*************************************/
+
+.secondary {
+    background:
+    url("pictures/snake2.png")
+    no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: black;
+    display: block;
+}
+
+/************************************
+ * In Blog Text
+*************************************/
+
+h3 {
+    padding: 0px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: Arial Black, Verdana, Arial, Helvetica, sans-serif;
+}
+
+/************************************
+ * Text next to left logo
+*************************************/
+
+h2 {
+    padding: 0px;
+    margin: 0px;
+    color: #dccf00;
+    font-size: 20px;
+    margin-left: 30px;
+    font-family: Arial Black, Verdana, Arial, Helvetica, sans-serif;
+    position: fixed;
+    z-index: 99;
+}
+
+/************************************
+ * Heading for each page
+*************************************/
+
+.name {
+    padding: 15px 0px 0px;
+    margin: 0px;
+    color: #dccf00;
+    font-size: 40px;
+    font-family: 'Luckiest Guy', Arial Black, Verdana, Arial, Helvetica, sans-serif;
+}
+
+/************************************
+ * Page Name Line Seperation
+*************************************/
+
+.line {
+    margin: -15px 0px 15px 0px;
+    color: #dccf00;
+    font-size: 30px;
+}
+
+/************************************
+ * Spinning Dragon eating its own tail
+*************************************/
+.bigIcon:hover, .bigIcon2:hover {
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+}
+
+.mainLogo {
+    padding: 0px;
+    margin: 15px 0px 15px 100px;
+    color: #ffffff;
+    font-size: 25px;
+    font-family: Arial Black, Verdana, Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+/************************************
+ * Footer/Copyright
+*************************************/
+footer p {
+    position: relative;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+    color: #dccf00;
+    font-family: Arial Black, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-decoration: overline;
+}
+
+/************************************
+ * NavBar Table
+*************************************/
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    float: right;
+    width: auto;
+}
+
+/************************************
+ * NavBar Each Block of Table
+*************************************/
+li {
+    display: inline;
+    margin: 0px;
+    text-align: left;
+    font-weight: bold;
+    font-family: Arial Black, Verdana, Arial, Helvetica, sans-serif;
+}
+
+/************************************
+ * NavBar Visited and NonVisted Links
+*************************************/
+
+li a:link, li a:visited {
+    text-decoration: none;
+    color: green;
+    font-size: 15px;
+    padding: 10px;
+}
+
+/************************************
+ * NavBar Hover
+*************************************/
+
+li a:hover {
+    color: #dccf00;
+    background-color: green;
+    padding: 10px;
+    transition: .7s;
+}
+
+/************************************
+ * NavBar Overlay
+*************************************/
+
+#nav {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 0px;
+    padding: 10px 20px;
+    font-size: 20px;
+    z-index: 99;
+}
+
+/************************************
+ * Small Icon Positioning
+*************************************/
+
+.banner {
+    margin-left: -9px;
+    width: 40px;
+    height: 40px;
+    margin-top: -10px;
+    position: fixed;
+}
+
+/************************************
+ * Boarder Box for Page Headers
+*************************************/
+
+#header {
+    text-align: center;
+    background-color: black;
+    height: 1000px;
+    width: 1000px;
+    opacity: .9;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+/************************************
+ * Dragon Eating Tail Secondary Page
+*************************************/
+
+.bigIcon2 {
+    
+    width: 200px;
+    height: 200px;
+    
+    margin-top: 50px;
+    display: block;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    position: relative;
+    
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+    
+    overflow:hidden;
+}
+
+/************************************
+ * Dragon Eating Tail Main page
+*************************************/
+
+.bigIcon {
+    
+    width: 200px;
+    height: 200px;
+    
+    margin-top: 750px;
+    display: block;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    position: relative;
+    
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+    
+    overflow:hidden;
+}
