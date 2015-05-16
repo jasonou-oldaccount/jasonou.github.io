@@ -1,0 +1,67 @@
+/* Global */
+* {
+    -webkit-transition: all 0.3s;
+    font-size: 1em;
+}
+
+body {
+    background: rgb(63, 82, 99);
+    -webkit-perspective: 1000px;
+    font-family: monospace;
+}
+
+header {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Panels */
+.panel {
+    height: 80vh;
+    overflow: auto;
+    background: rgb(48, 48, 48);
+    border: 1px solid #ccc;
+    box-shadow: -4px 4px 2px 0 rgba(0,0,0,0.3);
+    outline: 0;
+    color: #fff;
+}
+
+.panel-side {  
+    width: 25%;
+    margin: 0px 2.5%;
+    
+}
+
+.panel-center {
+    width: 40%;
+    margin: 0px;
+}
+
+#left-panel {
+    -webkit-transform: rotateY(10deg);
+    -webkit-transform-origin: left;
+}
+
+#right-panel {
+    -webkit-transform: rotateY(-10deg);
+    -webkit-transform-origin: right;
+}
+
+.panel-side:hover, .panel-center:hover {
+    box-shadow: 0px 0px 40px 5px rgba(255,255,255,0.4);
+}
+
+/* Lists */
+.list-group-item {
+    background: rgb(48, 48, 48);
+    font-size: 1em;
+}
+
+/* Search Bars */
+input {
+    color: #000;
+    border: solid 1px rgb(48, 48, 48);
+    border-radius: 10px;
+    padding: 0px 5px;
+    width: 77%;
+}

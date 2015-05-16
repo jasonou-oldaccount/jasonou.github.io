@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="">
+<head>
+    <meta charset="UTF-8">
+    <title>Fit init | Interactive Fitness Website</title>
+    
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <header class="text-center"><h1>Fit-init | Interactive Fitness Website</h1></header>
+    
+    <div class="container-fluid">
+       <div class="row">
+           <div class="col-xs-6 col-md-4 panel-side panel" id="left-panel">
+               <div class="text-center">
+                   <h3>EXERCISES</h3>
+                   <input type="text" placeholder="Search" data-ng-model="searchExercise" />
+               </div>
+               <hr />
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo temporibus velit, dolores perferendis enim, vel voluptatum quidem quae similique perspiciatis ex sunt nisi. Illo ducimus reiciendis error amet maiores doloremque numquam? Minima in laudantium sunt dignissimos quasi mollitia suscipit optio laborum, vel sit impedit! Ab quisquam voluptas, incidunt neque consequuntur.</p>
+               <hr />
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus esse, eum laboriosam officia beatae. Accusantium a aliquam alias animi quasi impedit dolorum officiis nostrum at beatae quae minus culpa quis molestias placeat labore porro, optio necessitatibus eveniet, facere. Amet nostrum repudiandae vel iusto quaerat ea facilis laboriosam nobis beatae dolor!</p>
+               <hr />
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores vel temporibus labore unde quaerat, aliquid ipsum, cumque fugiat repellendus eligendi ad numquam libero modi quos obcaecati. Saepe nisi ullam sint eveniet officia nulla. Omnis voluptatibus, deserunt voluptate laudantium quis, quam, alias nostrum hic consectetur pariatur labore asperiores saepe. Officiis, necessitatibus!</p>
+               <hr />
+               <br />
+           </div>
+           
+           <div class="col-xs-6 col-md-4 panel-center panel" id="center-panel">
+               <h3 class="text-center">HUMAN ANATOMY</h3>
+               <hr />
+           </div>
+           
+           <div class="col-xs-6 col-md-4 panel-side panel" id="right-panel">
+               <div class="text-center">
+                   <h3 >MUSCLES</h3>
+                   <input type="text" placeholder="Search" data-ng-model="searchName" />
+               </div>
+               
+               <hr />
+               <div class="text-center" data-ng-init="muscleNames=['A B S', 'A R M S', 'S H O U L D E R S', 'B A C K', 'L E G S', 'B U T T O C K S', 'H I P S', 'C H E S T', 'H E A R T']">
+                   <div class="list-group">
+                       <a href="#" class="list-group-item" data-ng-repeat="names in muscleNames | filter:searchName"><h5><strong>{{ names }}</strong></h5></a>
+                   </div>
+               </div>
+           </div>
+       </div>
+    </div>
+    
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/angular.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
