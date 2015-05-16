@@ -8,11 +8,15 @@ body {
     background: rgb(63, 82, 99);
     -webkit-perspective: 1000px;
     font-family: monospace;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    height:100vh;
 }
 
 header {
     color: #fff;
     margin-bottom: 20px;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 }
 
 /* Panels */
@@ -48,7 +52,7 @@ header {
     -webkit-transform-origin: right;
 }
 
-.panel-side:hover, .panel-center:hover {
+.panel-side:hover, .panel-center:hover, .navbar:hover {
     box-shadow: 0px 0px 40px 5px rgba(255,255,255,0.4);
 }
 
@@ -60,6 +64,7 @@ header {
 
 .list-group-item h5 {
     letter-spacing: 1em !important;
+    color: rgb(198, 198, 198) !important;
 }
 
 /* Search Bars */
@@ -69,4 +74,16 @@ input {
     border-radius: 10px;
     padding: 0px 5px;
     width: 77%;
+    margin-left: 8px;
+}
+
+/* Footer */
+.navbar {
+    background: rgb(48, 48, 48);
+    border: 1px solid #ccc;
+    box-shadow: -4px 4px 2px 0 rgba(0,0,0,0.3);
+    outline: 0;
+    color: #fff;
+    margin: 10px;
+    height: 10%;
 }

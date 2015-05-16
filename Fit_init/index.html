@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-ng-app="">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     
@@ -16,17 +16,34 @@
        <div class="row">
            <div class="col-xs-6 col-md-4 panel-side panel" id="left-panel">
                <div class="text-center">
-                   <h3>EXERCISES</h3>
-                   <input type="text" placeholder="Search" data-ng-model="searchExercise" />
+                   <h3>MUSCLE DESCRIPTIONS</h3>
+                   <i class="glyphicon glyphicon-search" style="color:#fff;"></i><input type="text" placeholder="Search" data-ng-model="searchExercise" />
                </div>
+               
                <hr />
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo temporibus velit, dolores perferendis enim, vel voluptatum quidem quae similique perspiciatis ex sunt nisi. Illo ducimus reiciendis error amet maiores doloremque numquam? Minima in laudantium sunt dignissimos quasi mollitia suscipit optio laborum, vel sit impedit! Ab quisquam voluptas, incidunt neque consequuntur.</p>
-               <hr />
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus esse, eum laboriosam officia beatae. Accusantium a aliquam alias animi quasi impedit dolorum officiis nostrum at beatae quae minus culpa quis molestias placeat labore porro, optio necessitatibus eveniet, facere. Amet nostrum repudiandae vel iusto quaerat ea facilis laboriosam nobis beatae dolor!</p>
-               <hr />
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores vel temporibus labore unde quaerat, aliquid ipsum, cumque fugiat repellendus eligendi ad numquam libero modi quos obcaecati. Saepe nisi ullam sint eveniet officia nulla. Omnis voluptatibus, deserunt voluptate laudantium quis, quam, alias nostrum hic consectetur pariatur labore asperiores saepe. Officiis, necessitatibus!</p>
-               <hr />
-               <br />
+               
+               <div class="text-center">
+                   <p class="descriptionAbs">The abdomen, or abdominal region is actually composed of 6 muscle groups that are located and attached from the ribs to the pelvis region. These are referred to as the core region and are responsible for moving, flexing and supporting the trunk areas. Amongst the benefit of having a slim torso, having strong abdominal and core muscles reduces lower back pain an aches and increases stability to your torso.</p>
+                   <hr/>
+                   <p class="descriptionArms">The muscles of the arms are one of the most sought after parts to develop. Your arm consists two thirds of triceps and one third of biceps, making the triceps muscle the larger of the two. Therefore, if you seek to gain more size in your arms, be sure to focus on the triceps to a greater degree. In men there is usually a strong emphasis placed on training the biceps over triceps. On the other hand, many women feel that they need to tone up th triceps area since over time, skin and fat begins to hang and look un-appealing with age. Toning up the triceps is the solution to this common problem. Complete arm development requires the training of both biceps and triceps.</p>
+                   <hr/>
+                   <p class="descriptionShoulders">The deltoid muscle originates on the lateral clavicle and inserts on the lateral proximal third of the humerus. Its major action is to raise and rotate the upper arm. The deltoid is divided into three major parts. The anterior front, medial side and anterior rear muscle heads. Strong and toned shoulder muscles can help prevent injuries and pain that come with everyday life and aging.</p>
+                   <hr/>
+                   <p class="descriptionBack">The back is composed of three main muscle groups. The trapezius traps, latissimus dorsi back and spinal erectors lower back. The trapezius are located originating from your neck down to the middle of your back where they come to a point. Your lats are located at each side of your traps which extend from the shoulders down to your lower back. The major function of the latissimus dorsi is to extend the arm and to rotate the arm medially. The major function of the trapezius is to move the scapula. Finally, the major function of the spinal erectors is to extend and laterally bend the trunk, neck and head.</p>
+                   <hr/>
+                   <p class="descriptionLegs">The quadriceps are further divided into four muscles groups; rectus femoris which extends the leg, flexes the thigh, sartorius which flexes, abducts and laterally rotates the thigh; flexes the leg, vastus lateralis which extends the leg and finally vastus medialis which aso extends the leg. The hamstrings are called biceps femoris which extends the thigh, flexes the legs.</p>
+                   <hr/>
+                   <p class="descriptionButtocks">The buttocks are comprised of the gluteal muscles, gluteus maximus muscle, gluteus medius muscle and gluteus minimus muscle. The two most common are the maximus and minimus. They are actually one of the strongest muscles found on the human body. The action of the buttocks is to laterally rotate as well as extend the hip, and also to extend the trunk.</p>
+                   <hr/>
+                   <p class="descriptionHips">The many muscles of the hip joint are all related to the various movements of the hip. The four major muscle groups are the gluteal group, the lateral rotator group, the adductor group and the iliopsoas group.</p>
+                   <hr/>
+                   <p class="descriptionChest">The chest is combination of the pectoralis major and minor. The first flexes and adducts the arm, medially rotates the arm, the latter draws the scapula forward, medialward, and downward. For the purpose of discussion, we'll separate the chest into four basic regions; upper, lower, outer and inner.</p>
+                   <hr/>
+                   <p class="descriptionHeart">The heart is a muscular organ about the size of a fist, located just behind and slightly left of the breastbone. The heart pumps blood through the network of arteries and veins called the cardiovascular system.</p>
+                   <hr/>
+                   <br/>
+               </div>
+               
            </div>
            
            <div class="col-xs-6 col-md-4 panel-center panel" id="center-panel">
@@ -34,20 +51,44 @@
                <hr />
            </div>
            
-           <div class="col-xs-6 col-md-4 panel-side panel" id="right-panel">
+           <div class="col-xs-6 col-md-4 panel-side panel" id="right-panel"  data-ng-app="muscleList" data-ng-controller="MuscleController as muscleList">
                <div class="text-center">
                    <h3 >MUSCLES</h3>
-                   <input type="text" placeholder="Search" data-ng-model="searchName" />
+                   <i class="glyphicon glyphicon-search" style="color:#fff;"></i><input type="text" placeholder="Search" data-ng-model="name" />
                </div>
                
                <hr />
-               <div class="text-center" data-ng-init="muscleNames=['ABS', 'ARMS', 'SHOULDERS', 'BACK', 'LEGS', 'BUTTOCKS', 'HIPS', 'CHEST', 'HEART']">
+               
+               <div class="text-center">
                    <div class="list-group">
-                       <a href="#" class="list-group-item" data-ng-repeat="names in muscleNames | filter:searchName"><h5><strong>{{ names }}</strong></h5></a>
+                       <a href="#" class="list-group-item" data-ng-repeat="names in muscleNames | filter:name" data-ng-click="muscleList.change(names.mainMuscle)"><h5><strong>{{ names.mainMuscle }}</strong></h5></a>
                    </div>
                </div>
            </div>
        </div>
+    </div>
+    
+    <div class="navbar navbar-inverse navbar-fixed-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h6>Copyright &copy; 2015 Jason Ou</h6>
+                </div><!-- end col-sm-2 -->
+
+                <div class="col-sm-4">
+                    <h6>Contact Me: JasonOu95@gmail.com</h6>
+                    <a href="https://www.facebook.com/JasonOu95" target="_blank">Facebook</a>
+                    <a href="https://www.linkedin.com/in/jasonoucs/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/jasonou" target="_blank">Github</a>
+                </div><!-- end col-sm-4 -->
+
+                <div class="col-sm-4">
+                    Fit-init, Created by Jason Ou
+                </div><!-- end col-sm-2 -->
+
+
+            </div><!-- end row -->
+        </div><!-- end container -->
     </div>
     
     <script src="assets/js/bootstrap.min.js"></script>
