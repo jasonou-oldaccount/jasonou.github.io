@@ -57,6 +57,10 @@ header {
     font-size: 1em;
 }
 
+h5 {
+    letter-spacing: 1em !important;
+}
+
 /* Search Bars */
 input {
     color: #000;
