@@ -14,9 +14,19 @@ body {
 }
 
 header {
-    color: #fff;
     margin-bottom: 20px;
     text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+    
+}
+
+/* Header */
+header a {
+    text-decoration: none !important;
+    color: #fff !important;
+}
+
+header a:hover {
+    font-size: 1.01em;
 }
 
 /* Panels */

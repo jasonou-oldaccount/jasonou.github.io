@@ -1,27 +1,20 @@
 angular.module('muscleList', []).controller('MuscleController', function($scope) {
 
     $scope.muscleNames=[
-        { mainMuscle: 'ABS', subMuscle: 'Abdominals'},
-        { mainMuscle: 'ARMS', subMuscle: 'Biceps'},
-        { mainMuscle: 'SHOULDERS', subMuscle: 'Anterior delts'},
-        { mainMuscle: 'BACK', subMuscle: 'Erector spinae'},
-        { mainMuscle: 'LEGS', subMuscle: 'Calves'},
-        { mainMuscle: 'BUTTOCKS', subMuscle: 'Gluteus maximus'},
-        { mainMuscle: 'HIPS',subMuscle: 'Hip adductors'},
-        { mainMuscle: 'CHEST', subMuscle: 'Pectoralis major'},
-        { mainMuscle: 'HEART', subMuscle: 'Heart'}
+        { mainMuscle: 'ABS', subMuscle: 'Abdominals', mainDesc: 'The abdomen, or abdominal region is actually composed of 6 muscle groups that are located and attached from the ribs to the pelvis region. These are referred to as the core region and are responsible for moving, flexing and supporting the trunk areas. Amongst the benefit of having a slim torso, having strong abdominal and core muscles reduces lower back pain an aches and increases stability to your torso.'},
+        { mainMuscle: 'ARMS', subMuscle: 'Biceps', mainDesc: 'The muscles of the arms are one of the most sought after parts to develop. Your arm consists two thirds of triceps and one third of biceps, making the triceps muscle the larger of the two. Therefore, if you seek to gain more size in your arms, be sure to focus on the triceps to a greater degree. In men there is usually a strong emphasis placed on training the biceps over triceps. On the other hand, many women feel that they need to tone up th triceps area since over time, skin and fat begins to hang and look un-appealing with age. Toning up the triceps is the solution to this common problem. Complete arm development requires the training of both biceps and triceps.'},
+        { mainMuscle: 'SHOULDERS', subMuscle: 'Anterior delts', mainDesc: 'The deltoid muscle originates on the lateral clavicle and inserts on the lateral proximal third of the humerus. Its major action is to raise and rotate the upper arm. The deltoid is divided into three major parts. The anterior front, medial side and anterior rear muscle heads. Strong and toned shoulder muscles can help prevent injuries and pain that come with everyday life and aging.'},
+        { mainMuscle: 'BACK', subMuscle: 'Erector spinae', mainDesc: 'The back is composed of three main muscle groups. The trapezius traps, latissimus dorsi back and spinal erectors lower back. The trapezius are located originating from your neck down to the middle of your back where they come to a point. Your lats are located at each side of your traps which extend from the shoulders down to your lower back. The major function of the latissimus dorsi is to extend the arm and to rotate the arm medially. The major function of the trapezius is to move the scapula. Finally, the major function of the spinal erectors is to extend and laterally bend the trunk, neck and head.'},
+        { mainMuscle: 'LEGS', subMuscle: 'Calves', mainDesc: 'The quadriceps are further divided into four muscles groups; rectus femoris which extends the leg, flexes the thigh, sartorius which flexes, abducts and laterally rotates the thigh; flexes the leg, vastus lateralis which extends the leg and finally vastus medialis which aso extends the leg. The hamstrings are called biceps femoris which extends the thigh, flexes the legs.'},
+        { mainMuscle: 'BUTTOCKS', subMuscle: 'Gluteus maximus', mainDesc: 'The buttocks are comprised of the gluteal muscles, gluteus maximus muscle, gluteus medius muscle and gluteus minimus muscle. The two most common are the maximus and minimus. They are actually one of the strongest muscles found on the human body. The action of the buttocks is to laterally rotate as well as extend the hip, and also to extend the trunk.'},
+        { mainMuscle: 'HIPS',subMuscle: 'Hip adductors', mainDesc: 'The many muscles of the hip joint are all related to the various movements of the hip. The four major muscle groups are the gluteal group, the lateral rotator group, the adductor group and the iliopsoas group.'},
+        { mainMuscle: 'CHEST', subMuscle: 'Pectoralis major', mainDesc: 'The chest is combination of the pectoralis major and minor. The first flexes and adducts the arm, medially rotates the arm, the latter draws the scapula forward, medialward, and downward. For the purpose of discussion, we\'ll separate the chest into four basic regions; upper, lower, outer and inner.'},
+        { mainMuscle: 'HEART', subMuscle: 'Heart', mainDesc: 'The heart is a muscular organ about the size of a fist, located just behind and slightly left of the breastbone. The heart pumps blood through the network of arteries and veins called the cardiovascular system.'}
     ];
     
-    this.change = function change(muscleNames) {
-        if(muscleNames == 'ABS') window.alert(muscleNames);
-        if(muscleNames == 'ARMS') window.alert(muscleNames);
-        if(muscleNames == 'SHOULDERS') window.alert(muscleNames);
-        if(muscleNames == 'BACK') window.alert(muscleNames);
-        if(muscleNames == 'LEGS') window.alert(muscleNames);
-        if(muscleNames == 'BUTTOCKS') window.alert(muscleNames);
-        if(muscleNames == 'HIPS') window.alert(muscleNames);
-        if(muscleNames == 'CHEST') window.alert(muscleNames);
-        if(muscleNames == 'HEART') window.alert(muscleNames);
+    this.change = function change(inputText, inputName) {
+        document.getElementById("muscleDesc").innerHTML = inputName;
+        document.getElementById("description").innerHTML = inputText;
     };
     
 });
