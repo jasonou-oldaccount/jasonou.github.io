@@ -1,6 +1,6 @@
 /* Global */
 * {
-    -webkit-transition: all 0.3s;
+    -webkit-transition: all 0.3s ease 0s;
     font-size: 1em;
 }
 
@@ -53,7 +53,7 @@ header a:hover {
     overflow: none;
 }
 
-#left-panel {
+/*#left-panel {
     -webkit-transform: rotateY(10deg);
     -webkit-transform-origin: left;
 }
@@ -61,7 +61,7 @@ header a:hover {
 #right-panel {
     -webkit-transform: rotateY(-10deg);
     -webkit-transform-origin: right;
-}
+}*/
 
 .panel-side:hover, .panel-center:hover, .navbar:hover {
     box-shadow: 0px 0px 40px 5px rgba(255,255,255,0.4);
@@ -108,6 +108,8 @@ input {
     box-shadow: -4px 4px 2px 0 rgba(0,0,0,0.3);
     outline: 0;
     color: #fff;
-    margin: 10px;
-    height: 10%;
+    margin: 10px 6px 5px 6px;
+    height: 8%;
+    font-size: 1em;
+    position: absolute;
 }
