@@ -8,16 +8,19 @@
     
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    
+    <script src="../Fit-init/assets/js/jquery-2.1.4.min.js"></script>
+    
 </head>
-<body data-ng-app="muscleList" data-ng-controller="MuscleController as muscleList">
-    <header class="text-center"><h1><a href="#" data-ng-click="muscleList.change('Fit-init is an interactive website for learning more about exercising.', 'Welcome to Fit-init')">Fit-init | Interactive Fitness Website</a></h1></header>
+<body>
+    <header class="text-center"><h1><a href="#">Fit-init | Interactive Fitness Website</a></h1></header>
     
     <div class="container-fluid">
        <div class="row">
            <div class="col-xs-6 col-md-4 panel-side panel" id="left-panel">
                <div class="text-center">
                    <h3 id="muscleDesc">Welcome to Fit-init</h3>
-                   <i class="glyphicon glyphicon-search" style="color:#fff;"></i><input type="text" placeholder="Search" data-ng-model="searchExercise" />
+                   <i class="glyphicon glyphicon-search" style="color:#fff;"></i><input type="text" placeholder="Search" />
                </div>
                
                <hr />
@@ -41,14 +44,86 @@
            <div class="col-xs-6 col-md-4 panel-side panel" id="right-panel">
                <div class="text-center">
                    <h3 >MUSCLES</h3>
-                   <i class="glyphicon glyphicon-search" style="color:#fff;"></i><input type="text" placeholder="Search" data-ng-model="name" />
+                   <i class="glyphicon glyphicon-search" style="color:#fff;"></i><input type="text" placeholder="Search" />
                </div>
                
                <hr />
                
                <div class="text-center">
-                   <div class="list-group">
-                       <a href="#" class="list-group-item" data-ng-repeat="names in muscleNames | filter:name" data-ng-click="muscleList.change(names.mainDesc, names.mainMuscle)"><h5><strong>{{ names.mainMuscle }}</strong></h5></a>
+                   <div class="list-group main not_abs not_arms not_shoulders not_back not_legs not_buttocks not_hips not_chest not_heart">
+                       <a href="#" class="list-group-item abs" ><h5><strong>Abs</strong></h5></a>
+                       <a href="#" class="list-group-item arms" ><h5><strong>Arms</strong></h5></a>
+                       <a href="#" class="list-group-item shoulders" ><h5><strong>Shoulders</strong></h5></a>
+                       <a href="#" class="list-group-item back" ><h5><strong>Back</strong></h5></a>
+                       <a href="#" class="list-group-item legs" ><h5><strong>Legs</strong></h5></a>
+                       <a href="#" class="list-group-item buttocks" ><h5><strong>Buttocks</strong></h5></a>
+                       <a href="#" class="list-group-item hips" ><h5><strong>Hips</strong></h5></a>
+                       <a href="#" class="list-group-item chest" ><h5><strong>Chest</strong></h5></a>
+                       <a href="#" class="list-group-item heart" ><h5><strong>Heart</strong></h5></a>
+                   </div>
+                   
+                   <div class="list-group abs_sub not_main not_arms not_shoulders not_back not_legs not_buttocks not_hips not_chest not_heart">
+                       <a href="#" class="list-group-item" ><h5><strong>Abdominals</strong></h5></a>
+                       <a href="#" class="list-group-item" ><h5><strong>Obliques</strong></h5></a>
+                       <a href="#" class="list-group-item" ><h5><strong>Serratus Anterior</strong></h5></a>
+                       <a href="#" class="list-group-item return" ><h5><strong><span class="glyphicon glyphicon-refresh"></span> Return</strong></h5></a>
+                   </div>
+                   
+                   <div class="list-group arms_sub not_main not_abs not_shoulders not_back not_legs not_buttocks not_hips not_chest not_heart">
+                       <a href="#" class="list-group-item" ><h5><strong>Biceps</strong></h5></a>
+                       <a href="#" class="list-group-item" ><h5><strong>Forearms</strong></h5></a>
+                       <a href="#" class="list-group-item" ><h5><strong>Triceps</strong></h5></a>
+                       <a href="#" class="list-group-item return" ><h5><strong><span class="glyphicon glyphicon-refresh"></span> Return</strong></h5></a>
+                   </div>
+                   
+                   <div class="list-group shoulders_sub not_main not_abs not_arms not_back not_legs not_buttocks not_hips not_chest not_heart">
+                       <a href="#" class="list-group-item" ><h5><strong>Anterior Deltoids</strong></h5></a>
+                       <a href="#" class="list-group-item" ><h5><strong>Lateral Deltoids</strong></h5></a>
+                       <a href="#" class="list-group-item" ><h5><strong>Posterior Deltoids</strong></h5></a>
+                       <a href="#" class="list-group-item return" ><h5><strong><span class="glyphicon glyphicon-refresh"></span> Return</strong></h5></a>
+                   </div>
+                   
+                   <div class="list-group back_sub not_main not_abs not_arms not_shoulders not_legs not_buttocks not_hips not_chest not_heart">
+                       <a href="#" class="list-group-item" ><h5><strong>Erector Spinae</strong></h5></a>
+                       <a href="#" class="list-group-item" ><h5><strong>Infraspinatus</strong></h5></a>
+                       <a href="#" class="list-group-item" ><h5><strong>Latissimus Dorsi</strong></h5></a>
+                       <a href="#" class="list-group-item" ><h5><strong>Teres</strong></h5></a>
+                       <a href="#" class="list-group-item" ><h5><strong>Trapezius</strong></h5></a>
+                       <a href="#" class="list-group-item return" ><h5><strong><span class="glyphicon glyphicon-refresh"></span> Return</strong></h5></a>
+                   </div>
+                   
+                   <div class="list-group legs_sub not_main not_abs not_arms not_shoulders not_back not_buttocks not_hips not_chest not_heart">
+                       <a href="#" class="list-group-item" ><h5><strong>Calves</strong></h5></a>
+                       <a href="#" class="list-group-item" ><h5><strong>Hamstrings</strong></h5></a>
+                       <a href="#" class="list-group-item" ><h5><strong>Quads</strong></h5></a>
+                       <a href="#" class="list-group-item" ><h5><strong>Satorius</strong></h5></a>
+                       <a href="#" class="list-group-item" ><h5><strong>Tibialis Anterior</strong></h5></a>
+                       <a href="#" class="list-group-item return" ><h5><strong><span class="glyphicon glyphicon-refresh"></span> Return</strong></h5></a>
+                   </div>
+                   
+                   <div class="list-group buttocks_sub not_main not_abs not_arms not_shoulders not_back not_legs not_hips not_chest not_heart">
+                       <a href="#" class="list-group-item" ><h5><strong>Gluteus Maximus</strong></h5></a>
+                       <a href="#" class="list-group-item" ><h5><strong>Gluteus Medius</strong></h5></a>
+                       <a href="#" class="list-group-item return" ><h5><strong><span class="glyphicon glyphicon-refresh"></span> Return</strong></h5></a>
+                   </div>
+                   
+                   <div class="list-group hips_sub not_main not_abs not_arms not_shoulders not_back not_legs not_buttocks not_chest not_heart">
+                       <a href="#" class="list-group-item" ><h5><strong>Hip Adductors</strong></h5></a>
+                       <a href="#" class="list-group-item" ><h5><strong>Hip Flexors</strong></h5></a>
+                       <a href="#" class="list-group-item" ><h5><strong>Tensor Fasciae</strong></h5></a>
+                       <a href="#" class="list-group-item" ><h5><strong>Latae</strong></h5></a>
+                       <a href="#" class="list-group-item return" ><h5><strong><span class="glyphicon glyphicon-refresh"></span> Return</strong></h5></a>
+                   </div>
+                   
+                   <div class="list-group chest_sub not_main not_abs not_arms not_shoulders not_back not_legs not_buttocks not_hips not_heart">
+                       <a href="#" class="list-group-item" ><h5><strong>Pectoralis Major</strong></h5></a>
+                       <a href="#" class="list-group-item return" ><h5><strong><span class="glyphicon glyphicon-refresh"></span> Return</strong></h5></a>
+                   </div>
+                   
+                   <div class="list-group heart_sub not_main not_abs not_arms not_shoulders not_back not_legs not_buttocks not_hips not_chest">
+                       <a href="#" class="list-group-item" ><h5><strong>Heart</strong></h5></a>
+                       <a href="#" class="list-group-item return" ><h5><strong><span class="glyphicon glyphicon-refresh"></span> Return</strong></h5></a>
+                   </div>
                    </div>
                </div>
            </div>

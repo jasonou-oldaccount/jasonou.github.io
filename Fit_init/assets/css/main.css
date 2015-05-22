@@ -87,7 +87,7 @@ header a:hover {
 }
 
 .list-group-item h5 {
-    letter-spacing: 1em !important;
+    letter-spacing: 0.2em !important;
     color: rgb(198, 198, 198) !important;
 }
 
