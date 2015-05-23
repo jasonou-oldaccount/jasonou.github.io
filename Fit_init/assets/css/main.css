@@ -68,16 +68,19 @@ header a:hover {
 }
 
 /* Center Panel */
-.panel-center .container {
-    width: 100%;
-    height: 100%;
-}
-
-.panel-center img {
+.panel-center .image_container {
     width: 100%;
     height: 100%;
     position: relative;
-    z-index: 1;
+}
+
+.image_container img {
+    width: 100% !important;
+    position: absolute;
+}
+
+img .main_img {
+    z-index: -1;
 }
 
 /* Lists */

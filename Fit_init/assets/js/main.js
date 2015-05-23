@@ -8,6 +8,10 @@ $('.search_muscles').keyup(function() {
     }).hide();
 });
 
+$('.abs').hover(function() {
+   $('.abs_img').css('filter', 'grayscale(5)');
+});
+
 $(document).ready(function() {
     $('.not_main').hide();
     
