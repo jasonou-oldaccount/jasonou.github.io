@@ -39,6 +39,14 @@
     margin-top: -20px;
 }
 
+#contactModal a {
+    padding: 0px 5% 0px 5%;
+}
+
+#contactModal .modal-content {
+    height: 60px;
+}
+
 /* D */
 .didyou {
     font-size: 60px;
