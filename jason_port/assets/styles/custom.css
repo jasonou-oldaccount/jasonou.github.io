@@ -1,7 +1,7 @@
 /* Global */
 .body {
     font-size: 40;
-    font-family: 'Open Sans', sans-serif;
+    font-family: sans-serif;
 }
 
 .centered {
@@ -9,7 +9,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -90%);
-    font-weight: bold;
+    font-weight: 100;
+}
+
+.animate_text {
+    color: #000;
 }
 
 /* About */
