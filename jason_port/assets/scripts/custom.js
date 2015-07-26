@@ -1,0 +1,1 @@
+$('.centered').hide().fadeIn(3000);
