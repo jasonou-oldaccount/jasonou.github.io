@@ -4,66 +4,54 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -90%);
-    font-weight: 100;
-    text-decoration: none !important;
+.mainContainer {
+    padding-top: 100px;
+    font-size: 72px;
 }
 
-.centered:hover {
-    -webkit-transition: all 0.5s ease !important;
-    -moz-transition: all 0.5s ease !important;
-    -o-transition: all 0.5s ease !important;
-    transition: all 0.5s ease !important;
+.about, .built, .contact, .didyou {
+    text-decoration: none !important;
+    position: absolute;
 }
 
 /* About */
 .about {
-    font-size: 60px;
-    margin-top: -150px;
+    margin: -270px 0 0 -23px;
 }
 
 /* Built */
 .built {
-    font-size: 60px;
-    margin-left: -60px;
-    margin-top: -80px;
+    margin: -200px 0 0 -80px;
 }
 
 /* Contact */
 .contact {
-    font-size: 60px;
-    margin-top: -20px;
+    margin: -135px 0 0 -23px;
 }
 
 #contactModal a {
     padding: 0px 2% 0px 2%;
+    margin-top: -85px;
 }
 
 #contactModal .modal-content {
+    padding: 0px;
+    margin: 0px;
     height: 60px;
 }
 
 /* D */
 .didyou {
-    font-size: 60px;
-    margin-left: 65px;
-    margin-top: -77px;
+    margin: -200px 0 0 38px;
 }
 
-/* Cross */
-.cross {
-    width: 300px;
-    height: 300px;
+.cross .img {
+    margin: 0 auto;
 }
 
 /* Footer */
 .detail-container {
-    margin-top: 30px;
-    letter-spacing: -0.1px;
+    letter-spacing: -0.15px;
 }
 
 /* Tooltip */
