@@ -69,6 +69,51 @@ body {
     margin-left: 30px;
 }
 
+.button-group {
+    width: 100%;
+    height: 50px;
+    margin: 0px 0 -10px 0;
+    padding: 0px;
+}
+
+.button-group .btn {
+    margin: -80px -5px 0 -5px;
+    background: #666;
+    border: 2px solid #666;
+    color: #fff;
+    font-weight: 400;
+}
+
+.button-group .btn:hover {
+    background:rgba(0,0,0,0);
+    color: #666;
+}
+
+.button-group .is-checked {
+    color: #666;
+}
+
+.button-group .btn:active,
+.button-group .is-checked {
+    background:rgba(0,0,0,0);
+}
+
+.button-group:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.item > * {
+    
+}
+
 /* Connect Toggle */
 .connect {
     margin: 0 auto;
