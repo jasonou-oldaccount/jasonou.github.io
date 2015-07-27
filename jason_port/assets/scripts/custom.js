@@ -15,6 +15,6 @@ $(document).ready(function(){
         }, 700, function(){pulse(!back)});
     $('#seventyfive img').animate(
         {
-            'width': (back) ? '500px' : '450px'
+            'width': (back) ? '2em' : '1.5em'
         }, 700);
 })(false);
