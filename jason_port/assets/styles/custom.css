@@ -18,6 +18,12 @@ body {
     background-image: url("../images/thin-cross.png");
 }
 
+/* Page Header Text */
+.header-text {
+    margin-bottom: -5px;
+    font-size: 1.2em;
+}
+
 /* Main Navigation */
 .about, .built, .connect, .didyou {
     width: 100px;
@@ -76,7 +82,7 @@ body {
 }
 
 .fa {
-    background: -webkit-linear-gradient(92deg, #eee, #333);
+    background: -webkit-linear-gradient(#333, #000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
