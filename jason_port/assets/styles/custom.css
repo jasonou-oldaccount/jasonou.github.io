@@ -58,6 +58,10 @@ body {
     margin: 0 auto;
 }
 
+#aboutModal .modal-body {
+    font-size: 15px;
+}
+
 /* Middle Second for Built and Did You */
 .mid {
     width: 300px;
