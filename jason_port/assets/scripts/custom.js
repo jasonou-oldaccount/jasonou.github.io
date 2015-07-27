@@ -5,3 +5,16 @@ $('.container').hide().fadeIn(2000);
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip(); 
 });
+
+// Heart Pulse
+(function pulse(back) {
+    $('.heart').animate(
+        {
+            'font-size': (back) ? '1.5em' : '2em',
+            opacity: (back) ? 1 : 0.5
+        }, 700, function(){pulse(!back)});
+    $('#seventyfive img').animate(
+        {
+            'width': (back) ? '500px' : '450px'
+        }, 700);
+})(false);
