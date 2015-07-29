@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        
+        <title>Jason Ou | Portfolio</title>
+        
+        <!-- Fonts -->
+        <link rel="stylesheet" href="assets/styles/font-awesome.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/styles/main.css">
+
+    </head>
+    
+    <body data-ng-app="portfolioApp">
+        <div ng-include="'assets/views/nav.htm'" class="nav"></div>
+        <div data-ng-view class="reveal-animation container"></div>
+    </body>
+    
+    <!-- JavaScript -->
+    <script src="assets/scripts/other/jquery.js"></script>
+    <script src="assets/scripts/other/bootstrap.min.js"></script>
+    <script src="assets/scripts/other/angular.min.js"></script>
+    <script src="assets/scripts/other/angular-route.min.js"></script>
+    <script src="assets/scripts/other/angular-animate.min.js"></script>
+    <script src="assets/scripts/app.js"></script>
+    <script src="assets/scripts/main.js"></script>
+    
+    <!-- Routes JS -->
+    <script src="assets/scripts/routes/routes.js"></script>
+    
+    <!-- Controllers JS-->
+    <script src="assets/scripts/controllers/about.js"></script>
+    <script src="assets/scripts/controllers/built.js"></script>
+    <script src="assets/scripts/controllers/connect.js"></script>
+    <script src="assets/scripts/controllers/didyouknow.js"></script>
+    <script src="assets/scripts/controllers/home.js"></script>
+    
+    <!-- Other JS -->
+    <script src="assets/scripts/animate/animation.js"></script>
+</html>

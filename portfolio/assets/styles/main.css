@@ -1,0 +1,30 @@
+/* ==================== 
+    CSS for Global
+==================== */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* ==================== 
+    CSS for NavBar
+==================== */
+
+.navbar {
+    height: 50px;
+    width: 100%;
+    background: rgba(0,0,0.5);
+}
+
+ul.nav a:hover { color: #fff !important; }
+
+/* ==================== 
+    CSS for Animations
+==================== */
+
+.reveal-animation {
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+ 
