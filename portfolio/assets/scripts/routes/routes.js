@@ -3,28 +3,19 @@ app.config(function($routeProvider) {
     $routeProvider
     
     .when('/', {
-        templateUrl: 'assets/views/home.htm',
-        controller: 'homeController'
+        templateUrl: 'assets/views/landing.htm',
+        controller: 'landingController'
     })
 
     .when('/about', {
         templateUrl: 'assets/views/about.htm',
         controller: 'aboutController'
     })
-
-    .when('/built', {
-        templateUrl: 'assets/views/built.htm',
-        controller: 'builtController'
+    
+    .when('/portfolio', {
+        templateUrl: 'assets/views/portfolio.htm',
+        controller: 'portfolioController'
     })
     
-    .when('/connect', {
-        templateUrl: 'assets/views/connect.htm',
-        controller: 'connectController'
-    })
-    
-    .when('/didyouknow', {
-        templateUrl: 'assets/views/didyouknow.htm',
-        controller: 'didyouknowController'
-    })
     .otherwise({redirectTo: '/'});
 });
