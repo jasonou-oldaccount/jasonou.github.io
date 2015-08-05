@@ -1,2 +1,2 @@
 // Module
-var app = angular.module('portfolioApp', ['ngRoute', 'ngAnimate']);
+var app = angular.module('portfolioApp', ['ngRoute', 'ngAnimate', 'ngMaterial']);
