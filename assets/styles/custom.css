@@ -1,61 +1,172 @@
-/* Global */
-.body {
-    font-size: 40;
-    font-family: 'Open Sans', sans-serif;
+/* ==================== 
+    CSS for Global
+==================== */
+
+html {
+    font-family: 'Lato', sans-serif;
 }
 
-.mainContainer {
-    padding-top: 100px;
-    font-size: 72px;
+.background-img {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 0;
 }
 
-.about, .built, .contact, .didyou {
-    text-decoration: none !important;
-    position: absolute;
+.background-img:before {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/city-img.jpg);
+    -webkit-filter: blur(2px) grayscale(0%);
+    -moz-filter: blur(2px) grayscale(0%);
+    -o-filter: blur(2px) grayscale(0%);
+    -ms-filter: blur(2px) grayscale(0%);
+    filter: blur(2px) grayscale(0%);
 }
 
-/* About */
-.about {
-    margin: -270px 0 0 -23px;
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
-/* Built */
-.built {
-    margin: -200px 0 0 -80px;
+/* ==================== 
+    CSS for NavBar
+==================== */
+
+
+
+/* ==================== 
+    CSS for Footer
+==================== */
+
+
+
+/* ==================== 
+    CSS for Profile Card
+==================== */
+
+.profile-container {
+    width: 450px;
+    height: 800px;
+    background: #fff;
+    margin-top: 80px;
 }
 
-/* Contact */
-.contact {
-    margin: -135px 0 0 -23px;
+.contact-header {
+    color: #C2B1B4;
 }
 
-#contactModal a {
-    padding: 0px 2% 0px 2%;
-    margin-top: -85px;
+/* ==================== 
+    CSS for Profile Card Top
+==================== */
+
+.top {
+    width: 100%;
+    height: 40%;
+    background-image: url(../images/book-img-min.jpg);
 }
 
-#contactModal .modal-content {
-    padding: 0px;
+/* ==================== 
+    CSS for Profile Card Image
+==================== */
+
+.profile-image {
+    z-index: 100;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: -100px auto;
+}
+
+.profile-image:before {
+    content: "";
+    display: block;
+    background-image: url(../images/profile-img.jpg);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+/* ==================== 
+    CSS for Profile Card Bottom
+==================== */
+
+.bottom {
+    width: 100%;
+    height: 60%;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.bottom .profile-description {
+    margin-top: 120px;
+    height: 210px;
+}
+
+.bottom .profile-description h3 {
     margin: 0px;
-    height: 60px;
 }
 
-/* D */
-.didyou {
-    margin: -200px 0 0 38px;
+.bottom .bottom-info {    
+    height: 80px;
+    margin: 0px 0px 14px 0px;
 }
 
-.cross .img {
-    margin: 0 auto;
+.bottom-info a:hover {
+    -webkit-transition: font-size 0.2s ease;
+    -moz-transition: font-size 0.2s ease;
+    -o-transition: font-size 0.2s ease;
+    transition: font-size 0.2s ease;
+    
+    font-size: 1.1em;
 }
 
-/* Footer */
-.detail-container {
-    letter-spacing: -0.15px;
+.view-profile {
+    color: #fff;
+    width: 450px;
+    height: 56px;
+    display: table-cell;
+    vertical-align: middle;
+    
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f9f7f5+0,e3dcd7+6,a49074+100,f9f8f7+100,a49074+102 */
+    background: #f9f7f5; /* Old browsers */
+    background: -moz-linear-gradient(right,  #f9f7f5 0%, #e3dcd7 6%, #a49074 101%, #f9f8f7 100%, #a49074 102%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f7f5), color-stop(6%,#e3dcd7), color-stop(100%,#a49074), color-stop(100%,#f9f8f7), color-stop(102%,#a49074)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f9f7f5 0%,#e3dcd7 6%,#a49074 101%,#f9f8f7 100%,#a49074 102%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(right,  #f9f7f5 0%,#e3dcd7 6%,#a49074 101%,#f9f8f7 100%,#a49074 102%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(right,  #f9f7f5 0%,#e3dcd7 6%,#a49074 101%,#f9f8f7 100%,#a49074 102%); /* IE10+ */
+    background-image: linear-gradient(to right,  #f9f7f5 0%,#e3dcd7 6%,#a49074 101%,#f9f8f7 100%,#a49074 102%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f7f5', endColorstr='#a49074',GradientType=0 ); /* IE6-9 */
 }
 
-/* Tooltip */
-.tooltip-inner {
-    font-weight: 100;
-    font-size: 1.2em;
+.view-profile a:hover {
+    
+}
+
+
+/* ==================== 
+    CSS for media queries
+==================== */
+
+@media screen and (max-width: 880px) {
+
+
+
+}
+
+@media screen and (max-width: 500px) {
+
+
+
+}
+
+@media screen and (max-width: 300px) {
+
+    
+
 }
