@@ -91,6 +91,17 @@ a {
     CSS for Profile Card
 ==================== */
 
+.bb-bookblock {
+    width: 450px;
+    height: 800px;
+    margin-top: 80px;
+    
+    animation: fadein 4s;
+    -moz-animation: fadein 4s; /* Firefox */
+    -webkit-animation: fadein 4s; /* Safari and Chrome */
+    -o-animation: fadein 4s; /* Opera */
+}
+
 .profile-container {
     width: 450px;
     height: 800px;

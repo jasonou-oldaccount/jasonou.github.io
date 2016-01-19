@@ -1,0 +1,5 @@
+$(function() {
+			
+	$( '#bb-bookblock' ).bookblock();
+
+});
