@@ -66,6 +66,7 @@ html {
     max-width: 140%;
     height: 140%;
     background-image: url(../images/city-img.jpg);
+    background-repeat: no-repeat;
     -webkit-filter: blur(2px) grayscale(0%);
     -moz-filter: blur(2px) grayscale(0%);
     -o-filter: blur(2px) grayscale(0%);
